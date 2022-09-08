@@ -3,7 +3,6 @@
 
 **Features:**
 
-(* means this feature is pending to be done)
 
 ### Login
 
