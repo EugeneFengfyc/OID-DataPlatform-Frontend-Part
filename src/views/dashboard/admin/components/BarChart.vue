@@ -18,11 +18,11 @@ export default {
     },
     width: {
       type: String,
-      default: '100%'
+      default: '120%'
     },
     height: {
       type: String,
-      default: '300px'
+      default: '400px'
     }
   },
   data() {
@@ -47,6 +47,10 @@ export default {
       this.chart = echarts.init(this.$el, 'macarons')
 
       this.chart.setOption({
+        title: {
+          text: 'Types of MSI Representatives',
+          left: 'center'
+        },
         tooltip: {
           trigger: 'axis',
           axisPointer: { // 坐标轴指示器，坐标轴触发有效
@@ -54,7 +58,7 @@ export default {
           }
         },
         grid: {
-          top: 10,
+          top: 25,
           left: '2%',
           right: '2%',
           bottom: '3%',
@@ -62,39 +66,42 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-          axisTick: {
-            alignWithLabel: true
-          }
+          splitLine: { show: false },
+          data: ['HBCU', 'HSI', 'AANAPISI', 'ANNH', 'PBI', 'TCU', 'NASNTI']
+          // axisTick: {
+          //   alignWithLabel: true
+          // }
         }],
         yAxis: [{
           type: 'value',
           axisTick: {
-            show: false
+            show: true
           }
         }],
         series: [{
-          name: 'pageA',
+          name: 'num',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
-          data: [79, 52, 200, 334, 390, 330, 220],
+          data: [96, 431, 137, 40, 99, 34, 26],
           animationDuration
-        }, {
-          name: 'pageB',
-          type: 'bar',
-          stack: 'vistors',
-          barWidth: '60%',
-          data: [80, 52, 200, 334, 390, 330, 220],
-          animationDuration
-        }, {
-          name: 'pageC',
-          type: 'bar',
-          stack: 'vistors',
-          barWidth: '60%',
-          data: [30, 52, 200, 334, 390, 330, 220],
-          animationDuration
-        }]
+        }
+        // , {
+        //   name: 'pageB',
+        //   type: 'bar',
+        //   stack: 'vistors',
+        //   barWidth: '60%',
+        //   data: [80, 52, 200, 334, 390, 330, 220],
+        //   animationDuration
+        // }, {
+        //   name: 'pageC',
+        //   type: 'bar',
+        //   stack: 'vistors',
+        //   barWidth: '60%',
+        //   data: [30, 52, 200, 334, 390, 330, 220],
+        //   animationDuration
+        // }
+        ]
       })
     }
   }

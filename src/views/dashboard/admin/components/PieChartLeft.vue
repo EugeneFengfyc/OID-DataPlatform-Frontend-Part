@@ -46,7 +46,7 @@ export default {
 
       this.chart.setOption({
         title: {
-          text: 'Top 10 Institute Representatives',
+          text: 'Top 10 Job Role Representatives',
           left: 'center'
         },
         tooltip: {
@@ -56,26 +56,23 @@ export default {
         legend: {
           left: 'center',
           bottom: '40',
-          data: ['VT', 'UMich', 'UCB', 'UCD', 'Yale', 'UCLA', 'UCR', 'BU', 'Lehigh', 'Brown']
+          data: ['Professor', 'Assistant Professor', 'Lecturer', 'Postdoctoral Fellow', 'Postdoctoral Researcher', 'Postdoctoral Scholar', 'Director']
         },
         series: [
           {
-            name: 'University',
+            name: 'Role',
             type: 'pie',
             roseType: 'radius',
             radius: [15, 95],
             center: ['50%', '38%'],
             data: [
-              { value: 1432, name: 'VT' },
-              { value: 187, name: 'UMich' },
-              { value: 150, name: 'UCB' },
-              { value: 123, name: 'UCD' },
-              { value: 95, name: 'Yale' },
-              { value: 93, name: 'UCLA' },
-              { value: 92, name: 'UCR' },
-              { value: 90, name: 'BU' },
-              { value: 82, name: 'Lehigh' },
-              { value: 81, name: 'Brown' }
+              { value: 1216, name: 'Professor' },
+              { value: 1565, name: 'Assistant Professor' },
+              { value: 48, name: 'Lecturer' },
+              { value: 43, name: 'Postdoctoral Fellow' },
+              { value: 41, name: 'Postdoctoral Researcher' },
+              { value: 30, name: 'Postdoctoral Scholar' },
+              { value: 22, name: 'Director' }
             ],
             animationEasing: 'cubicInOut',
             animationDuration: 2600

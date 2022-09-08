@@ -46,7 +46,7 @@ export default {
 
       this.chart.setOption({
         title: {
-          text: 'Top 10 Institute Representatives',
+          text: '2017-2022 Total ICTAS supported faculty collaborations \n  by VT College',
           left: 'center'
         },
         tooltip: {
@@ -56,26 +56,24 @@ export default {
         legend: {
           left: 'center',
           bottom: '40',
-          data: ['VT', 'UMich', 'UCB', 'UCD', 'Yale', 'UCLA', 'UCR', 'BU', 'Lehigh', 'Brown']
+          data: ['medicine & Liberal Arts and Human sciences', 'Science', 'Natural Resources and Environment',
+            'Liberal Arts and Human sciences', 'Engineering', 'Agriculture and Life Sciences & Engineering', 'griculture and Life Sciences']
         },
         series: [
           {
-            name: 'University',
+            name: 'Role',
             type: 'pie',
             roseType: 'radius',
             radius: [15, 95],
             center: ['50%', '38%'],
             data: [
-              { value: 1432, name: 'VT' },
-              { value: 187, name: 'UMich' },
-              { value: 150, name: 'UCB' },
-              { value: 123, name: 'UCD' },
-              { value: 95, name: 'Yale' },
-              { value: 93, name: 'UCLA' },
-              { value: 92, name: 'UCR' },
-              { value: 90, name: 'BU' },
-              { value: 82, name: 'Lehigh' },
-              { value: 81, name: 'Brown' }
+              { value: 1, name: 'medicine & Liberal Arts and Human sciences' },
+              { value: 15, name: 'Science' },
+              { value: 2, name: 'Natural Resources and Environment' },
+              { value: 5, name: 'Liberal Arts and Human sciences' },
+              { value: 38, name: 'Engineering' },
+              { value: 4, name: 'Agriculture and Life Sciences & Engineering' },
+              { value: 13, name: 'Agriculture and Life Sciences' }
             ],
             animationEasing: 'cubicInOut',
             animationDuration: 2600

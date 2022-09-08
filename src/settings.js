@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue Element Admin',
+  title: 'Virginia Tech Inclusion and Diversity Data Dashboard',
 
   /**
    * @type {boolean} true | false
