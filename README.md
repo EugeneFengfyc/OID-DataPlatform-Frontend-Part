@@ -1,5 +1,4 @@
 # OID-DataPlatform-Frontend-Part
-# OID Data Platform Doc
 
 **Features:**
 
